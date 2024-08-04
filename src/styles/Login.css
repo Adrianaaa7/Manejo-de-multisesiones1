@@ -1,0 +1,47 @@
+.register-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+.register-form {
+    width: 100%;
+    max-width: 400px; /* Ajusta el tamaño según sea necesario */
+    position: relative;
+    z-index: 1001; /* Asegúrate de que el formulario esté encima del fondo */
+}
+
+
+
+.google-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        max-width: 100%;
+        
+    }
+    .img{
+        display: none;
+    }
+}
